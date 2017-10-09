@@ -12,7 +12,7 @@ const MAPBOX_TOKEN = process.env.MapboxAccessToken; // eslint-disable-line
 // Source data GeoJSON
 // const DATA_URL = 'https://raw.githubusercontent.com/uber-common/deck.gl-data/master/examples/geojson/vancouver-blocks.json'; // eslint-disable-line
 
-const DATA_URL = 'https://raw.githubusercontent.com/neverforgit/deck_gl_projects/master/data/alameda_h2w.json'
+const DATA_URL = 'https://github.com/neverforgit/deck_gl_projects/raw/master/data/alameda_h2w.json'
 
 
 const colorScale = r => [r * 255, 140, 200 * (1 - r)];
