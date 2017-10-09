@@ -15,7 +15,8 @@ const MAPBOX_TOKEN = process.env.MapboxAccessToken; // eslint-disable-line
 const DATA_URL = 'https://raw.githubusercontent.com/neverforgit/deck_gl_projects/master/data/alameda_h2w.json';
 
 
-const colorScale = r => [r * 255, 140, 200 * (1 - r)];
+const colorScale = r => [r * 255, 50, 200 * (1 - r)];
+
 
 class Root extends Component {
 
