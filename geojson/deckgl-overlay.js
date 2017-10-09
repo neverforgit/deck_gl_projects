@@ -14,8 +14,14 @@ export default class DeckGLOverlay extends Component {
 
   static get defaultViewport() {
     return {
-      latitude: 49.254,
-      longitude: -123.13,
+      // latitude: 49.254,
+      // longitude: -123.13,
+      // zoom: 11,
+      // maxZoom: 16,
+      // pitch: 45,
+      // bearing: 0
+      latitude: 37.805188,
+      longitude: -122.271888,
       zoom: 11,
       maxZoom: 16,
       pitch: 45,
@@ -39,8 +45,10 @@ export default class DeckGLOverlay extends Component {
       extruded: true,
       wireframe: true,
       fp64: true,
-      getElevation: f => Math.sqrt(f.properties.valuePerSqm) * 10,
-      getFillColor: f => colorScale(f.properties.growth),
+      // getElevation: f => Math.sqrt(f.properties.valuePerSqm) * 10,
+      getElevation: f => f.properties.TotalTimeH2W,
+      // getFillColor: f => colorScale(f.properties.growth),
+      getFillColor: f => colorScale(f.properties.TimeInCongestionH2W),
       getLineColor: f => [255, 255, 255],
       lightSettings: LIGHT_SETTINGS,
       pickable: Boolean(this.props.onHover),

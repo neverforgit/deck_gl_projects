@@ -10,9 +10,10 @@ import {json as requestJson} from 'd3-request';
 const MAPBOX_TOKEN = process.env.MapboxAccessToken; // eslint-disable-line
 
 // Source data GeoJSON
-const DATA_URL = 'https://raw.githubusercontent.com/uber-common/deck.gl-data/master/examples/geojson/vancouver-blocks.json'; // eslint-disable-line
+// const DATA_URL = 'https://raw.githubusercontent.com/uber-common/deck.gl-data/master/examples/geojson/vancouver-blocks.json'; // eslint-disable-line
 
-// const DATA_URL = '/Users/daddy30000/14_Mobility_Sim/GoogleDrive/SFCTA_RFQ/website/vancouver-blocks.json'; // eslint-disable-line
+const DATA_URL = 'https://raw.githubusercontent.com/neverforgit/deck_gl_projects/master/data/alameda_h2w.json'
+
 
 const colorScale = r => [r * 255, 140, 200 * (1 - r)];
 
